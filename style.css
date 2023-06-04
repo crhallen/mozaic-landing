@@ -97,7 +97,7 @@ body {
 
 .background-video.fade-in {
   opacity: 1;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .video-overlay {
@@ -128,7 +128,7 @@ body {
 }
 
 .coming-soon.zoom-fade-in {
-  animation: 4s ease 0s normal forwards 1 zoomFadeIn;
+  animation: 2.5s ease 0s normal forwards 1 zoomFadeIn;
 }
 
 @keyframes zoomFadeIn {
@@ -155,7 +155,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  animation: 7s ease 0s normal forwards 1 zoomFadeIn;
+  animation: 3s linear 0s normal forwards 1 audioFadeIn;
 }
 
 @keyframes audioFadeIn {
@@ -163,9 +163,11 @@ body {
     opacity: 0;
   }
   90% {
+    transform: translateY(20%);
     opacity: 0;
   }
   100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
