@@ -14,9 +14,19 @@
     />
   </head>
   <body>
-    <div class="background"></div>
+    <!-- <div class="background"></div> -->
+    <video class="background-video" playsinline autoplay muted loop id="bg-vid">
+      <source src="./background.webm" type="video/webm" />
+    </video>
+    <div class="video-overlay"></div>
     <div class="container">
-      <h1 class="coming-soon">Coming soon</h1>
+      <h1 class="coming-soon zoom-fade-in">Coming soon</h1>
     </div>
+    <script>
+      const vid = document.getElementById("bg-vid");
+      vid.oncanplaythrough = function () {
+        vid.classList.add("fade-in");
+      };
+    </script>
   </body>
 </html>
