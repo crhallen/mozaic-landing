@@ -84,6 +84,7 @@ select {
 
 body {
   background: black;
+  overflow: hidden;
 }
 
 .background-video {
