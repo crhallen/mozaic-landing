@@ -84,6 +84,7 @@ select {
 
 body {
   background: black;
+  color: white;
   overflow: hidden;
 }
 
@@ -96,7 +97,7 @@ body {
 
 .background-video.fade-in {
   opacity: 1;
-  transition: opacity 4s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 .video-overlay {
@@ -120,7 +121,6 @@ body {
 }
 
 .coming-soon {
-  color: white;
   text-transform: uppercase;
   letter-spacing: 14px;
   font-family: Questrial, sans-serif;
@@ -128,7 +128,7 @@ body {
 }
 
 .coming-soon.zoom-fade-in {
-  animation: 6s ease 0s normal forwards 1 zoomFadeIn;
+  animation: 4s ease 0s normal forwards 1 zoomFadeIn;
 }
 
 @keyframes zoomFadeIn {
@@ -143,4 +143,33 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.rainforest-sound {
+  display: none;
+}
+
+.audio-toggle {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: 7s ease 0s normal forwards 1 zoomFadeIn;
+}
+
+@keyframes audioFadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
 }
