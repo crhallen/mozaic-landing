@@ -14,9 +14,8 @@
     />
   </head>
   <body>
-    <video id="bg-vid" class="background-video" playsinline autoplay muted loop>
-      <source src="./background-v2.webm" type="video/webm" />
-      <source src="./background-v2.mp4" type="video/mp4" />
+    <video id="bg-vid" class="background-video" muted playsinline loop>
+      <source src="./bg.mp4" type="video/mp4" />
     </video>
     <div class="video-overlay"></div>
     <div class="container">
@@ -25,6 +24,7 @@
     <script>
       const vid = document.getElementById("bg-vid");
       vid.oncanplaythrough = function () {
+        vid.play();
         vid.classList.add("fade-in");
       };
     </script>
