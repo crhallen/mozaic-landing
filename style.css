@@ -85,8 +85,8 @@ select {
 body {
   background: black;
   color: white;
-  overflow: hidden;
   font-family: Questrial, sans-serif;
+  display: flex; /* to stop the lineheight around the content */
 }
 
 .background-video {
