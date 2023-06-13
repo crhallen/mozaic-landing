@@ -165,7 +165,7 @@ body {
 
 .newsletter-input {
   background-color: rgba(0, 0, 0, 0.5);
-  border: 0;
+  border: 1px solid transparent;
   border-bottom: 1px solid white;
   color: white;
   margin-left: 8px;
@@ -174,7 +174,7 @@ body {
 
 .newsletter-input:focus-visible {
   outline: none;
-  outline: 1px solid white;
+  border: 1px solid white;
 }
 
 .submit-button {
