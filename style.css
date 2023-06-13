@@ -112,7 +112,7 @@ body {
 
 .container {
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -131,13 +131,8 @@ body {
 
 .copy-para {
   margin-bottom: 20px;
-}
-
-.coming-soon {
-  text-transform: uppercase;
-  letter-spacing: 14px;
-  font-family: Questrial, sans-serif;
-  font-size: calc(12px + 2vmin);
+  /* font-size: 1.2rem; */
+  font-size: min(12px + 1vmin, 1.2rem);
 }
 
 .content-fade-in {
@@ -153,9 +148,14 @@ body {
   }
 }
 
+.buttondown-form {
+  padding-bottom: 50px;
+}
+
 .newsletter-label {
   margin-top: 40px;
-  display: block;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 .inputs-wrapper {
@@ -172,11 +172,17 @@ body {
   padding: 1px 6px;
 }
 
+.newsletter-input:focus-visible {
+  outline: none;
+  outline: 1px solid white;
+}
+
 .submit-button {
   background: transparent;
   border: 0;
   padding: 1px 6px;
   display: inline-flex;
+  cursor: pointer;
 }
 
 .rainforest-sound {
