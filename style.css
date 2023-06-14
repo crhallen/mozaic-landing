@@ -32,7 +32,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -90,7 +90,9 @@ body {
 }
 
 .background-video {
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   width: 100vw;
   object-fit: cover;
   opacity: 0;
@@ -102,7 +104,7 @@ body {
 }
 
 .video-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -123,8 +125,7 @@ body {
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
