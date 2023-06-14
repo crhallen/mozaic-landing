@@ -152,7 +152,7 @@ body {
 }
 
 .buttondown-form {
-  padding-bottom: 50px;
+  padding-bottom: 32px;
 }
 
 .newsletter-label {
@@ -213,6 +213,13 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 64px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .hidden {
