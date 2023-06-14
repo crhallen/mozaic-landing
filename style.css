@@ -195,10 +195,13 @@ body {
 .audio-toggle {
   position: absolute;
   bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
+  width: 100%;
+  text-align: center;
   animation: 1.5s linear 0s normal forwards 1 audioFadeIn;
+}
+
+.audio-toggle svg {
+  cursor: pointer;
 }
 
 @keyframes audioFadeIn {
