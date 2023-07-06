@@ -220,7 +220,7 @@ body {
 
 .contact-wrapper {
   display: flex;
-  width: 64px;
+  width: 80px;
   justify-content: space-around;
   margin: 0 auto;
 }
